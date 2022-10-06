@@ -9,16 +9,6 @@ Quick docker-compose command to shut down old containers & start docker containe
 docker-compose down --remove-orphans && docker-compose up -d --build
 ```
 
-### FIXME Problem with Nextcloud config file...
-
-...workaround:
-
-- `docker-compose down -v`
-- In docker-compose.yml comment line `- ./docker/nextcloud/config/config.php:/var/www/html/config/config.php` (in nextcloud volumes)
-- `docker-compose down --remove-orphans && docker-compose up -d --build`
-- Uncomment line commented before
-- `docker-compose down --remove-orphans && docker-compose up -d --build`
-
 ### Step-by-step setup
 
 WORK-IN-PROGRESS
