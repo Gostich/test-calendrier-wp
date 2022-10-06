@@ -9,7 +9,7 @@ Quick docker-compose command to shut down old containers & start docker containe
 docker-compose down --remove-orphans && docker-compose up -d --build
 ```
 
-### Step-by-step setup
+## Step-by-step setup
 
 WORK-IN-PROGRESS
 
