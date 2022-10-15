@@ -52,7 +52,7 @@ WORK-IN-PROGRESS
     - "Add" on top
     - Set a title
     - Add ICS calendar shortcode (replace ICS_URL with url got from nextcloud agenda):
-        - `[ics_calendar debug="false" url="ICS_URL" compact="true" reload="30" maskinfo="Résevé" monthnav="arrows" showendtimes="true" title="Availability of meeting room #1" hidealldayindicator="true" color="#ff0000"]`
+        - `[ics_calendar debug="false" url="ICS_URL" compact="true" reload="30" maskinfo="Résevé" monthnav="arrows" showendtimes="true" title="Availability of meeting room #1" hidealldayindicator="false" color="#ff0000"]`
 
 ## Ref
 
