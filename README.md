@@ -30,15 +30,23 @@ WORK-IN-PROGRESS
 - Go to http://localhost:666
 - Select language
 - Fill in anything you want (just disable search engine)
+- Make sure your timezone is correctly set up
+    - http://localhost:666/wp-admin/options-general.php
 - Install required app
     - 'Extensions' in left menu
     - 'Add'
-    - Search for "oplugins"
-    - Install 'Booking calendar' by oplugins
-    - Install 'Booking manager' by oplugins
-    - Active both of them
-- Booking calendar settings -> 'Sync' tab
-    - 'Import ics' tab
-    - Fill in import field with "http://nextcloud:nextcloud@nextcloud/remote.php/dav/calendars/nextcloud/personal/?export"
+    - Search for "ics calendar"
+    - Install 'ics calendar"
+    - Activate the plugin
+- Create a page with the calendar
+    - "Pages" in menu
+    - "Add" on top
+    - Set a title
+    - Add a shortcode:
+      `[ics_calendar url="http://nextcloud:nextcloud@nextcloud/remote.php/dav/calendars/nextcloud/personal/?export" compact="true" reload="1"]`
 
-work in progress...
+## Ref
+
+[ICS calendar parameters guide](https://icscalendar.com/icsdocs/)
+
+Work in progress...
