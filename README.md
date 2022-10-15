@@ -21,9 +21,18 @@ WORK-IN-PROGRESS
     - 'N' in top-right corner -> 'application'
     - 'Organisation' (in left menu)
     - Clic on "Download and activate" of 'Calendar'
-- Create a first event in agenda
+- Create a new agenda to sync with WordPress plugin
+    - Go to 'Agenda'
+    - Click on 'New agenda'
+    - Set the name (example: "Meeting room #1")
+    - Click on 'share' icon next to your new agenda
+    - Click on '+' next to "share link"
+    - Click on "..." -> "Copy subscription link" (will be used as "ICS_URL" later in this step-by-step)
+        - Change "localhost:667" domain with "nextcloud" (docker internal service domain)
+        - Should look like `http://nextcloud/remote.php/dav/public-calendars/AbCdEfGhIjKlMnOp?export`
+- Create a first event(s) in agenda
     - Clic on 'Agenda'
-    - Create any event(s)
+    - Create any event(s) to sync with WordPress plugin
 
 ### Setup Wordpress with booking agenda
 
@@ -42,15 +51,9 @@ WORK-IN-PROGRESS
     - "Pages" in menu
     - "Add" on top
     - Set a title
-    - Add a shortcode:
-      `[ics_calendar url="http://nextcloud:nextcloud@nextcloud/remote.php/dav/calendars/nextcloud/personal/?export" compact="true" reload="1" maskinfo="Resevé" monthnav="arrows" showendtimes="true" title="Disponibilités du Pantin" hidealldayindicator="true" color="#ff0000"]`
+    - Add ICS calendar shortcode (replace ICS_URL with url got from nextcloud agenda):
+        - `[ics_calendar debug="false" url="ICS_URL" compact="true" reload="30" maskinfo="Résevé" monthnav="arrows" showendtimes="true" title="Availability of meeting room #1" hidealldayindicator="true" color="#ff0000"]`
 
 ## Ref
 
 [ICS calendar parameters guide](https://icscalendar.com/icsdocs/)
-
-## TODO
-
-- setup a calendar readonly user on nextcloud
-
-Work in progress...
