@@ -43,7 +43,7 @@ WORK-IN-PROGRESS
     - "Add" on top
     - Set a title
     - Add a shortcode:
-      `[ics_calendar url="http://nextcloud:nextcloud@nextcloud/remote.php/dav/calendars/nextcloud/personal/?export" compact="true" reload="1"]`
+      `[ics_calendar url="http://nextcloud:nextcloud@nextcloud/remote.php/dav/calendars/nextcloud/personal/?export" compact="true" reload="1" maskinfo="Resevé"]`
 
 ## Ref
 
@@ -51,7 +51,6 @@ WORK-IN-PROGRESS
 
 ## TODO
 
-- Show only occupation in calendar (hide label)
 - setup a calendar readonly user on nextcloud
 
 Work in progress...
