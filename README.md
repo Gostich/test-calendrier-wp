@@ -49,4 +49,9 @@ WORK-IN-PROGRESS
 
 [ICS calendar parameters guide](https://icscalendar.com/icsdocs/)
 
+## TODO
+
+- Show only occupation in calendar (hide label)
+- setup a calendar readonly user on nextcloud
+
 Work in progress...
