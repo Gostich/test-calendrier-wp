@@ -43,7 +43,7 @@ WORK-IN-PROGRESS
     - "Add" on top
     - Set a title
     - Add a shortcode:
-      `[ics_calendar url="http://nextcloud:nextcloud@nextcloud/remote.php/dav/calendars/nextcloud/personal/?export" compact="true" reload="1" maskinfo="Resevé" monthnav="arrows" showendtimes="true" title="Disponibilités du Pantin" hidealldayindicator="true"]`
+      `[ics_calendar url="http://nextcloud:nextcloud@nextcloud/remote.php/dav/calendars/nextcloud/personal/?export" compact="true" reload="1" maskinfo="Resevé" monthnav="arrows" showendtimes="true" title="Disponibilités du Pantin" hidealldayindicator="true" color="#ff0000"]`
 
 ## Ref
 
